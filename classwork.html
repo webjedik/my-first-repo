@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="classwork.css"/>
+</head>
+<body>
+    <div class="alert alert-danger" role="alert">
+        Please  fill the blank spaces
+      </div>
+    <!--<nav>
+        <a href="#">
+            <img src="image/logo.jpg" alt="logo" width="100">
+        </a>
+
+        <ul>
+            <li class="nav">Home</li>
+            <li class="nav">About us</li>
+            <li class="nav">Contact</li>
+        </ul>
+    </nav>-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="image/logo.jpg img-fluid" alt="logo" width="100">
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner" style="height: 600px";>
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/logitech2.webp" class="d-block w-100" alt="image">
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="image/Samsung QN100B Neo QLED TV-2.jpg" class="d-block w-100 img-fluid" class="img-fluid" alt="image">
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="images/pexels-pixabay-265987.jpg" class="d-block w-100" alt="image">
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+        <img src="image/iQOO-7-neo.jpg" class="d-block w-100" alt="image">
+      </div>
+    <div class="carousel-item" data-bs-interval="10000">
+        <img src="image/marshall.webp" class="d-block w-100" alt="image">
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col-md-8">
+                <div class="p-5 border border-dark">
+                    <img src="images/image.jpg" class="img-fluid" class="border border-secondary"><br><br>
+
+                    <div class="row">
+                                <div class="col-3">
+
+                                </div>
+                                <div class="p-5 border border-dark">
+                                    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+                                    
+                                </div>
+                               
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+            <div class="col-md-4">
+                <div class="p-5">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        Registration successful
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                    <form class="was-validated">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" required placeholder="Enter Name Here" id="name">
+                            
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">
+                                Invalid feedback</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="Enter Name Here" id="name">
+                        </div>
+                        <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password" id="password">
+                        </div>
+                        <div class="form-text" id="passwordHelpBlock">
+                            This is blocker
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">State of Origin</label>
+                        <select name="" id="state" class="form-select mb-3">
+                            <option value="">Abia</option>
+                            <option value="">Adamawa</option>
+                            <option selectedvalue=">Delta</option>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Undergraduate
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Graduate
+                            </label>
+                        </div>
+                        <div class="form-check form mb-3">
+                            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Undergraduate
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Graduate
+                            </label>
+                            
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" name="" class="form-control" id="email" placeholder="Email">
+                                <label for="" class="email"></label>
+                            </div>
+
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Graduate
+                            </label>
+                            
+                        </div>
+                       <div class="mb-3">
+                        <a href="" class="btn btn-outline-danger btn-lg disabled">Go back</a>
+                        <button class="btn btn-outline-primary btn-lg">Submit</button>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Accordion Item #1
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                    </div>
+                
+            
+            </div>
+         </div>
+    </div>
+                
+                    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
